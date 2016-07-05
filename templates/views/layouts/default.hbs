@@ -21,6 +21,7 @@
 
 	</head>
 	<body>
+        {{#ifeq locals.section 'home'}}
 		<div id="header">
 			<div class="container">
 				<div role="navigation" class="navbar navbar-default">
@@ -52,6 +53,7 @@
 				</div>
 			</div>
 		</div>
+        {{/ifeq}}
 		<div id="body">
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
@@ -86,7 +88,6 @@
 		</div>
 		<div class="container">
 			<div id="footer">
-				<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
 			</div>
 		</div>
 		{{!--
